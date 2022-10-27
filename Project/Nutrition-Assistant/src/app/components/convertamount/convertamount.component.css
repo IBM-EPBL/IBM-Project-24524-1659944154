@@ -1,0 +1,21 @@
+.row {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    border-color: black;
+    min-height: 24rem;
+  }
+  .card-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+  .form-control {
+    border-color: black;
+    margin-bottom: 1rem;
+  }
+  

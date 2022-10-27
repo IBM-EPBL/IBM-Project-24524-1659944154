@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="text-center">
+          <img
+            class="card-img-top center"
+            src="../../../assets/fj.jpg"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-body">
+          <div class="text-center">
+            <button class="btn btn-primary" (click)="onGetJoke()">
+              Get Some Joke...
+            </button>
+          </div>
+          <p *ngIf="joke != ''">{{ joke }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="text-center">
+          <img
+            class="card-img-top center"
+            src="../../../assets/tr.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-body">
+          <div class="text-center">
+            <button class="btn btn-primary" (click)="onGetTrivia()">
+              Get Some food Trivia...
+            </button>
+          </div>
+          <p *ngIf="trivia != ''">{{ trivia }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

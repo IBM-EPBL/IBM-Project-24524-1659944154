@@ -1,0 +1,13 @@
+.nav-link {
+    width: 8rem;
+    text-align: center;
+  }
+  .nav-link:hover {
+    background-color: rgba(72, 182, 69, 0.548);
+  }
+  .eatright {
+    margin-left: 2rem;
+    min-width: 35rem;
+    max-height: 8rem;
+  }
+  

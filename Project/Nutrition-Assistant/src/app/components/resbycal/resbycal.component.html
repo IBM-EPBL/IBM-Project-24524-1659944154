@@ -1,0 +1,38 @@
+<div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Enter The Calories</h5>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="TARGETED CALORIES Eg:2000"
+        aria-label="TARGETED CALORIES Eg:2000"
+        aria-describedby="basic-addon2"
+        [(ngModel)]="cal"
+      />
+      <button class="btn btn-primary" (click)="onClick()">
+        Get List of recipes
+      </button>
+    </div>
+  </div>
+  <h1 class="midele">Some Recipes for you</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">TITLE</th>
+        <th scope="col">READY IN (MINS)</th>
+        <th scope="col">NO.OF.SERVINGS</th>
+        <th scope="col">LINK TO RECIPE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let recepie of recepies">
+        <td>{{ recepie.id }}</td>
+        <td>{{ recepie.title }}</td>
+        <td>{{ recepie.readyInMinutes }}</td>
+        <td>{{ recepie.servings }}</td>
+        <td>{{ recepie.sourceUrl }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Enter Your Question Below:</h5>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Eg: How much protein in an apple"
+            aria-label="Eg: How much protein in an apple"
+            aria-describedby="basic-addon2"
+            [(ngModel)]="query"
+          />
+          <div class="text-center">
+            <button class="btn btn-primary" (click)="onClick()">
+              Get Answer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Your Answer here:</h5>
+          <p class="card-text text-center">{{ answer }}</p>
+          <p class="card-text text-center">{{ image }}</p>
+        </div>
+      </div>
+    </div>
+  </div>

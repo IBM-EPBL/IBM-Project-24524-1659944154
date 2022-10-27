@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Enter Your Question Below:</h5>
+          <form [formGroup]="convertForm" (ngSubmit)="onSubmit()">
+            <input
+              type="text"
+              formControlName="ingredientName"
+              class="form-control"
+              placeholder="INGREDIENT NAME Eg: FLOUR"
+              aria-label="INGREDIENT NAME Eg: FLOUR"
+              aria-describedby="basic-addon2"
+            />
+            <input
+              type="text"
+              formControlName="targetUnit"
+              class="form-control"
+              placeholder="UNIT YOU WANT Eg: gm "
+              aria-label="UNIT YOU WANT Eg: gm"
+              aria-describedby="basic-addon2"
+            />
+            <input
+              type="text"
+              formControlName="sourceUnit"
+              class="form-control"
+              placeholder="YOUR MEASUREMENT TOOL Eg: CUP"
+              aria-label="YOUR MEASUREMENT TOOL Eg: CUP"
+              aria-describedby="basic-addon2"
+            />
+            <input
+              type="text"
+              formControlName="sourceAmount"
+              class="form-control"
+              placeholder="0.0"
+              aria-label="0.0"
+              aria-describedby="basic-addon2"
+            />
+            <div class="text-center">
+              <button class="btn btn-primary">Get Amount</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Your Anser here:</h5>
+          <p class="card-text text-center">{{ answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,23 @@
+.form-control {
+    border-color: black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .card {
+    max-width: 73rem;
+    border-color: black;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+  }
+  .table {
+    max-width: 73rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .midele {
+    text-align: center;
+  }
+  
