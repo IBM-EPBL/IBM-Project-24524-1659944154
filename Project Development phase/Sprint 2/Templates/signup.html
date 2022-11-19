@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+     <link rel="stylesheet" type="text/css" href="/static/css/signup.css">
+</head>
+<body>
+<div class="login-form">
+    <h1>Nutrition Assistant</h1>
+    <h1>Signup Form</h1>
+    <form action="{{url_for('signup')}}" method="POST">
+        <p>Username:-</p>
+        <input type="text" placeholder="Enter Email" id ="username" name="username" required>
+        <p>E-Mail:-</p>
+        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+        <p>Password:-</p>
+        <input type="password" placeholder="Enter Password" id="password" name="password" required>
+        <p>Confirm Password:-</p>
+        <input type="password" placeholder="Re-Enter Password" id="repassword" name="repassword" required>
+        <button type="submit"><b>Sign up</b></button>
+        <p><b>Already have an Account ? <a href="login">Login</a> </b></p>
+    </form>
+</div>
+</body>
+</html>

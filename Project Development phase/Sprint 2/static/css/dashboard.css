@@ -1,0 +1,25 @@
+*{
+margin:0;
+padding:0;
+font-family: Century Gothic;
+}
+
+header{
+background : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://nutrition-flask-shailaja.s3.jp-tok.cloud-object-storage.appdomain.cloud/dashb.jpg');
+background-size: cover;
+background-position:center;
+height:100vh;
+}
+
+
+.title{
+position:absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+
+.title{
+color:#fff;
+font-size:20px;
+}
