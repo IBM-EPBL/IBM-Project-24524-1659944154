@@ -12,7 +12,8 @@ app = Flask(__name__)
 
 app.secret_key = 'a'
 
-conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=6667d8e9-9d4d-4ccb-ba32-21da3bb5aafc.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=30376;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=ntv37394;PWD=i5QfgqIlnGog6H1Y",'','')
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=30699;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;PROTOCOL=TCPIP;UID=bsw94689;PWD=chzilTh2WOngq0iG;",
+        '', '')
 
 
 @app.route("/signup")
@@ -136,8 +137,8 @@ def getnutri():
             carbs = r["carbs"]["value"]
             def add():
                 conn = ibm_db.connect(
-                    "DATABASE=bludb;HOSTNAME=6667d8e9-9d4d-4ccb-ba32-21da3bb5aafc.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=30376;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=ntv37394;PWD=i5QfgqIlnGog6H1Y",
-                    '', '')
+                    "DATABASE=bludb;HOSTNAME=19af6446-6171-4641-8aba-9dcff8e1b6ff.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=30699;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;PROTOCOL=TCPIP;UID=bsw94689;PWD=chzilTh2WOngq0iG;",
+        '', '')
                 insert_sql = "INSERT INTO historyi VALUES (?, ?, ?, ?, ?)"
                 calories1=round(calories,2)
                 protein1=round(protein,2)
